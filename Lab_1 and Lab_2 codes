@@ -1,0 +1,744 @@
+Here are all the codes and questions from the two PDF files without comments:
+
+### Codes from AI_Lab_1_part1.pdf:
+
+#### Variables:
+```python
+x = 5
+y = "John"
+print(x)
+print(y)
+
+x = 4
+x = "Sally"
+print(x)
+
+x = str(3)
+y = int(3)
+z = float(3)
+
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+
+x = "John"
+x = 'John'
+
+a = 4
+A = "Sally"
+
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+myVariableName = "John"
+MyVariableName = "John"
+my_variable_name = "John"
+
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+x = "Python is awesome"
+print(x)
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x + y + z)
+
+x = 5
+y = 10
+print(x + y)
+
+x = 5
+y = "John"
+print(x + y)
+
+x = 5
+y = "John"
+print(x, y)
+
+x = "awesome"
+def myfunc():
+    print("Python is " + x)
+myfunc()
+
+x = "awesome"
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+myfunc()
+print("Python is " + x)
+
+def myfunc():
+    global x
+    x = "fantastic"
+myfunc()
+print("Python is " + x)
+
+x = "awesome"
+def myfunc():
+    global x
+    x = "fantastic"
+myfunc()
+print("Python is " + x)
+```
+
+#### Operators:
+```python
+print(10 + 5)
+
+x = 5
+x += 3
+x -= 3
+x *= 3
+x /= 3
+x %= 3
+x //= 3
+x **= 3
+x &= 3
+x |= 3
+x ^= 3
+x >>= 3
+x <<= 3
+
+x = 5
+y = 3
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+x = 5
+print(x > 3 and x < 10)
+print(x > 3 or x < 4)
+print(not(x > 3 and x < 10))
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is z)
+print(x is y)
+print(x == y)
+
+x = ["apple", "banana"]
+print("banana" in x)
+print("pineapple" not in x)
+```
+
+#### Conditional Statements:
+```python
+a = 33
+b = 200
+if b > a:
+    print("b is greater than a")
+
+a = 33
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+
+x = 41
+if x > 10:
+    print("Above ten,")
+    if x > 20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
+```
+
+#### Loops:
+```python
+for i in range(5):
+    print(i)
+
+for i in range(2, 5):
+    print(i)
+
+for i in range(2, 20, 3):
+    print(i)
+
+for i in range(5):
+    print(i)
+else:
+    print("Finally finished!")
+
+fruits = ["orange", "apple", "cherry"]
+for i in fruits:
+    print(i)
+
+for i in "orange":
+    print(i)
+
+fruits = ["orange", "apple", "cherry"]
+for i in fruits:
+    print(i)
+    if i == "apple":
+        break
+
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+
+i = 1
+while i < 5:
+    print(i)
+    if i == 2:
+        break
+    i += 1
+
+i = 0
+while i < 5:
+    i += 1
+    if i == 2:
+        continue
+    print(i)
+
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 5")
+```
+
+#### Functions:
+```python
+def my_function():
+    print("Hello World")
+my_function()
+
+def my_function(name):
+    print("name" + name)
+my_function("Mike")
+my_function("Monica")
+my_function("John")
+
+def my_function(fname, lname):
+    print(fname + " " + lname)
+my_function("Emil", "Refsnes")
+
+def my_function(*names):
+    print("Name=" + names[2])
+my_function("Mike", "Monica", "John")
+
+def my_function(name3, name2, name1):
+    print("Name=" + name3)
+my_function(name1="Mike", name2="Monica", name3="John")
+
+def my_function(**name):
+    print("His last name is " + name["lname"])
+my_function(fname="Mike", lname="Monica")
+
+def my_function(food):
+    for i in food:
+        print(i)
+fruits = ["orange", "apple", "cherry"]
+my_function(fruits)
+
+def my_function(a):
+    return 5 * a
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+def my_recursion(k):
+    if(k > 0):
+        result = k + my_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+print("\n\nRecursion Example Results")
+my_recursion(6)
+```
+
+### Codes from AI_Lab_1_part2.pdf:
+
+#### List:
+```python
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+list1 = ["abc", 34, True, 40, "male"]
+
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+    print(x)
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+    print(thislist[i])
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list1.extend(list2)
+print(list1)
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+for x in list2:
+    list1.append(x)
+print(list1)
+```
+
+#### Tuple:
+```python
+thistuple = ("CSE", "EEE", "BBA")
+print(thistuple)
+
+thistuple = ("apple", "banana", "cherry", 1, 2, 3)
+print(len(thistuple))
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+thistuple = ("apple")
+print(type(thistuple))
+
+thistuple = tuple(("apple", "banana", "cherry"))
+print(thistuple)
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[:4])
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+print(thistuple)
+
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+print(thistuple)
+
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+print(green)
+print(yellow)
+print(red)
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1
+```
+
+#### Dictionary:
+```python
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(thisdict)
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = thisdict["model"]
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict["year"] = 2018
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+for x in thisdict:
+    print(thisdict[x])
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+myfamily = {
+    "child1": {
+        "name": "Emil",
+        "year": 2004
+    },
+    "child2": {
+        "name": "Tobias",
+        "year": 2007
+    },
+    "child3": {
+        "name": "Linus",
+        "year": 2011
+    }
+}
+print(myfamily)
+```
+
+#### NumPy:
+```python
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+print(type(arr))
+
+import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr[0])
+
+import numpy as np
+arr = np.array([1, 2, 3])
+for x in arr:
+    print(x)
+
+import numpy as np
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.concatenate((arr1, arr2))
+print(arr)
+
+import numpy as np
+arr = np.array([3, 2, 0, 1])
+print(np.sort(arr))
+
+from numpy import random
+x = random.randint(100)
+print(x)
+```
+
+#### Pandas:
+```python
+import pandas as pd
+mydataset = {
+    'cars': ["BMW", "Volvo", "Ford"],
+    'passings': [3, 7, 2]
+}
+myvar = pd.DataFrame(mydataset)
+print(myvar)
+
+import pandas as pd
+a = [1, 7, 2]
+myvar = pd.Series(a)
+print(myvar)
+
+import pandas as pd
+a = [1, 7, 2]
+myvar = pd.Series(a, index=["x", "y", "z"])
+print(myvar)
+```
+
+#### Matplotlib:
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+xpoints = np.array([0, 6])
+ypoints = np.array([0, 250])
+plt.plot(xpoints, ypoints)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+plt.plot(xpoints, ypoints)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints = np.array([3, 8, 1, 10])
+plt.plot(ypoints, marker='o')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints = np.array([3, 8, 1, 10])
+plt.plot(ypoints, linestyle='dotted')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+plt.plot(x, y)
+plt.grid(color='green', linestyle='--', linewidth=0.5)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array([5, 7, 8, 7, 2, 17, 2, 9, 4, 11, 12, 9, 6])
+y = np.array([99, 86, 87, 88, 111, 86, 103, 87, 94, 78, 77, 85, 86])
+plt.scatter(x, y, color='hotpink')
+x = np.array([2, 2, 8, 1, 15, 8, 12, 9, 7, 3, 11, 4, 7, 14, 12])
+y = np.array([100, 105, 84, 105, 90, 99, 90, 95, 94, 100, 79, 112, 91, 80, 85])
+plt.scatter(x, y, color='#88c999')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+plt.bar(x, y, color="#4CAF50", width=0.1)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.normal(170, 10, 250)
+plt.hist(x)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+myexplode = [0.2, 0, 0, 0]
+plt.pie(y, labels=mylabels, explode=myexplode, shadow=True)
+plt.show()
+```
+
+### Questions from AI_Lab_1_part1.pdf:
+
+1. **Write a Python program to find the sum of odd and even numbers from a set of numbers.**
+2. **Write a Python program to find the smallest number from a set of numbers.**
+3. **Write a Python program to find the sum of all numbers between 50 and 100, which are divisible by 3 and not divisible by 5.**
+4. **Write a Python program to find the second highest number from a set of numbers.**
+5. **Write a Python program to find the factorial of a number using a for loop.**
+6. **Write a Python program to generate the Fibonacci series.**
+
+### Questions from AI_Lab_1_part2.pdf:
+
+1. **Write a Python program to reverse a tuple.**
+2. **Write a Python program to swap two tuples in Python.**
+3. **Write a Python program to get the 4th element from the beginning and the 4th element from the last of a tuple.**
+4. **Write a Python program to count even and odd numbers in a list.**
+
+### Answers to the Questions:
+
+#### 1. Sum of Odd and Even Numbers:
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_sum = 0
+odd_sum = 0
+for num in numbers:
+    if num % 2 == 0:
+        even_sum += num
+    else:
+        odd_sum += num
+print("Sum of even numbers:", even_sum)
+print("Sum of odd numbers:", odd_sum)
+```
+
+#### 2. Smallest Number in a List:
+```python
+numbers = [10, 20, 30, 40, 50]
+smallest = numbers[0]
+for num in numbers:
+    if num < smallest:
+        smallest = num
+print("Smallest number:", smallest)
+```
+
+#### 3. Sum of Numbers Divisible by 3 and Not by 5:
+```python
+total = 0
+for num in range(50, 101):
+    if num % 3 == 0 and num % 5 != 0:
+        total += num
+print("Sum of numbers divisible by 3 and not by 5:", total)
+```
+
+#### 4. Second Highest Number in a List:
+```python
+numbers = [10, 20, 30, 40, 50]
+numbers.sort()
+print("Second highest number:", numbers[-2])
+```
+
+#### 5. Factorial of a Number:
+```python
+num = 5
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print("Factorial of", num, "is", factorial)
+```
+
+#### 6. Fibonacci Series:
+```python
+n = 10
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+```
+
+#### 7. Reverse a Tuple:
+```python
+my_tuple = (1, 2, 3, 4, 5)
+reversed_tuple = my_tuple[::-1]
+print("Reversed tuple:", reversed_tuple)
+```
+
+#### 8. Swap Two Tuples:
+```python
+tuple1 = (11, 22)
+tuple2 = (99, 88)
+tuple1, tuple2 = tuple2, tuple1
+print("tuple1:", tuple1)
+print("tuple2:", tuple2)
+```
+
+#### 9. 4th Element from Beginning and End:
+```python
+tuplex = ("w", 3, "r", "e", "s", "o", "u", "r", "c", "e")
+print("4th element from beginning:", tuplex[3])
+print("4th element from end:", tuplex[-4])
+```
+
+#### 10. Count Even and Odd Numbers in a List:
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_count = 0
+odd_count = 0
+for num in numbers:
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+print("Even numbers:", even_count)
+print("Odd numbers:", odd_count)
+```
+
+These are all the codes and answers to the questions from the two PDF files.
